@@ -1,0 +1,16 @@
+RewriteEngine on
+RewriteRule ^trang-chu$ index.php
+RewriteRule ^tin-tuc$ index.php?page=news
+RewriteRule ^dang-nhap$ index.php?page=login
+RewriteRule ^dang-ky$ index.php?page=register
+RewriteRule ^tim-kiem$ index.php?page=search
+RewriteRule ^doi-hinh$ index.php?page=team
+RewriteRule ^thu-vien$ index.php?page=thuvien
+RewriteRule ^lich-su$ index.php?page=lichsu
+RewriteRule ^lien-he$ index.php?page=lienhe
+RewriteRule ^([a-zA-Z0-9_-]+)-([0-9]+).info$ index.php?page=player&name=$1&id=$2
+RewriteRule ^([a-zA-Z0-9_-]+).tag$ index.php?page=tags&tag=$1
+
+RewriteRule ^([a-zA-Z0-9-()]+)$ index.php?page=catalog&url=$1
+RewriteRule ^chitiet-trandau-([0-9]+).html$ index.php?page=detail&id=$1
+RewriteRule ^tin-tuc/([a-zA-Z0-9_-]+)-([0-9]+).html$ index.php?page=post&name=$1&id=$2
